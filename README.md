@@ -7,7 +7,7 @@ I plan to continue my focus on validations and state enforcment.
 # Installation
 
 ```
-go get github.com/ulule/limiter
+go get github.com/mephux/ssm
 ```
 
 # Usage
