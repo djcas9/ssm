@@ -107,7 +107,7 @@ if err := person.State.Change("happy"); err != nil {
 * Create and use Events
 
 ```go
-if err := person.State.NewEvent(ssm.Event{
+err := person.State.NewEvent(ssm.Event{
   Name: "bad_day",
   From: ssm.StateList{"happy", "normal", "sad", "mad"},
   To:   "sad",
@@ -117,7 +117,9 @@ if err := person.State.NewEvent(ssm.Event{
   After: func() {
     fmt.Println("super lame.")
   },
-}); err != nil {
+}); 
+
+if err != nil {
   log.Fatal(err)
 }
 
