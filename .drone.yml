@@ -1,0 +1,12 @@
+image: mephux/docker-golang
+branches:
+  - master
+git:
+  path: github.com/mephux/ssm
+script:
+  - make deps
+  - make
+notify:
+  email:
+    recipients:
+      - dustin.webber@gmail.com
