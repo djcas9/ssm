@@ -1,5 +1,7 @@
 # SSM - Simple State Machine
 
+[![Build Status](http://komanda.io:8080/api/badge/github.com/mephux/ssm/status.svg?branch=master)](http://komanda.io:8080/github.com/mephux/ssm)
+
 I wanted something a little more similar to the ruby on rails plugin 
 `aasm - https://github.com/aasm/aasm`. This lib is still young but 
 I plan to continue my focus on validations and state enforcment.
